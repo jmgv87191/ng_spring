@@ -9,5 +9,18 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
+
   title = 'spring_repaso';
+  visible: boolean = true;
+
+  nombres:string[] = ['juan','pedro','alo','ese']
+
+  setVisible(){
+    this.visible = this.visible? false : true
+  }
+
+
+
+
 }
