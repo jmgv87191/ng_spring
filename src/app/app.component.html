@@ -4,6 +4,11 @@
 
 @if (  visible ) {
   <h2> {{ title }} </h2>
+
+  <h3>
+    total: {{ counter }}
+  </h3>
+
   @if ( nombres!= undefined && nombres.length > 0  ) {
     
     <div class="container">
@@ -38,4 +43,4 @@
   <h2>Lo sentimos la pagina no esta disponible</h2>
 }
 
-<app-counter [title]="subtitle" ></app-counter>
+<app-counter [title]="subtitle" (emmitCounter)="setCounter($event)" ></app-counter>
