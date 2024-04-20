@@ -9,11 +9,13 @@ import { CounterComponent } from './counter/counter.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
 
 
   title = 'spring_repaso';
   visible: boolean = true;
+  subtitle = 'esto viene desde el padre'
 
   nombres:string[] = ['juan','pedro','alo','ese']
 
